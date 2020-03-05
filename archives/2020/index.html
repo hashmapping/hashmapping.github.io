@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://hashmapping.github.io">
   <title>Archives: 2020 | Marco Hao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +13,7 @@
   <meta name="description" content="练笔的地方">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Marco Hao">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+<meta property="og:url" content="https://hashmapping.github.io/archives/2020/index.html">
 <meta property="og:site_name" content="Marco Hao">
 <meta property="og:description" content="练笔的地方">
 <meta property="article:author" content="Marco Hao">
@@ -38,9 +38,6 @@
 
   
 
-  
-    
- 	  <script src="/lib/clickLove.js"></script>
   
   
 
@@ -72,7 +69,9 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/" target="_blank">技术笔记</a></li>
+			
+				<li><a href="/tags/ACM/" target="_blank">ACM/ICPC</a></li>
 			
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
 			
@@ -130,6 +129,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -146,11 +147,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91">技术笔记</a></li>
+					<li style="width: 25%"><a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/">技术笔记</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/ACM/">ACM/ICPC</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -178,6 +181,53 @@
           <a href="/archives/2020" class="archive-year">2020</a>
         </div>
         <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+<a href="/2020/03/05/React-Native%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+        <time datetime="2020-03-05T08:36:31.175Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+</a>
+
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+	
+	  <a class="archive-article-title" href="/2020/03/05/React-Native%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" target="_blank">React-Native踩坑记录</a>
+  
+    </h1>
+  
+
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">移动开发</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">React-Native</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
     
     <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
@@ -223,7 +273,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 <a href="http://yoursite.com/" target="_blank">Marco Hao</a>
+    		&copy; 2020 <a href="https:/hashmapping.github.io/" target="_blank">Marco Hao</a>
     	</div>
       	<div class="footer-right">
 			
@@ -262,23 +312,6 @@
 
 
 <!--  -->
-
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
 
 
     
@@ -323,6 +356,14 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">移动开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">React-Native</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -373,7 +414,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">北邮毕业,是个写代码的<br>桌面开发、移动开发<br>目标是架构师<br>想当个写小说的<br></div>
+  	  		<div class="aboutme-wrap" id="aboutme">北京邮电大学<br>是个写代码的<br>C#、JAVA、React-Native<br></div>
   	  	
     	</section>
     
