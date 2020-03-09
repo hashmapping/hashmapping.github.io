@@ -10,14 +10,14 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="练笔的地方">
+  <meta name="description" content="说明：主要参考动物书《React Native开发指南》 工作原理1、React使用Virtual DOM进行浏览器渲染，主要优点是减少DOM过程中的重复渲染，以提高渲染效率 2、React Native使用桥接的方式进行界面渲染，以进行多平台的适配。 3、渲染周期的起点：React组件挂载到DOM上之后 创建组件1、所有的React代码都存于React组件之中 2、React Native中的组">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React-Native语法速览">
 <meta property="og:url" content="https://hashmapping.github.io/2020/03/08/React-Native%E8%AF%AD%E6%B3%95%E9%80%9F%E8%A7%88/index.html">
 <meta property="og:site_name" content="Marco Hao">
-<meta property="og:description" content="练笔的地方">
+<meta property="og:description" content="说明：主要参考动物书《React Native开发指南》 工作原理1、React使用Virtual DOM进行浏览器渲染，主要优点是减少DOM过程中的重复渲染，以提高渲染效率 2、React Native使用桥接的方式进行界面渲染，以进行多平台的适配。 3、渲染周期的起点：React组件挂载到DOM上之后 创建组件1、所有的React代码都存于React组件之中 2、React Native中的组">
 <meta property="article:published_time" content="2020-03-08T11:33:47.000Z">
-<meta property="article:modified_time" content="2020-03-08T11:37:48.368Z">
+<meta property="article:modified_time" content="2020-03-09T08:12:51.631Z">
 <meta property="article:author" content="Marco Hao">
 <meta property="article:tag" content="移动开发">
 <meta property="article:tag" content="React-Native">
@@ -201,7 +201,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">0字</span>
+      <span class="post-count">584字</span>
     </span>
   </span>
 
@@ -210,7 +210,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -221,7 +221,52 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    
+    <p>说明：主要参考动物书《React Native开发指南》</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p>1、React使用Virtual DOM进行浏览器渲染，主要优点是减少DOM过程中的重复渲染，以提高渲染效率</p>
+<p>2、React Native使用桥接的方式进行界面渲染，以进行多平台的适配。</p>
+<p>3、渲染周期的起点：React组件挂载到DOM上之后</p>
+<h3 id="创建组件"><a href="#创建组件" class="headerlink" title="创建组件"></a>创建组件</h3><p>1、所有的React代码都存于React组件之中</p>
+<p>2、React Native中的组件会被渲染为平台特定组件，如&lt;view&gt;在IOS平台上会被渲染为UIView，在Android平台上会被渲染为View。</p>
+<p>3、使用React UI组件必须显式导入</p>
+<h3 id="使用JSX"><a href="#使用JSX" class="headerlink" title="使用JSX"></a>使用JSX</h3><p>1、什么是JSX：JS的语法扩展，用于声明React当中的元素。可以任意使用JS表达式</p>
+<p>2、在没有浏览器的世界里，每个组件的样式、标记和行为被统一成单个文件的形式更有意义。</p>
+<h3 id="原生组件的样式"><a href="#原生组件的样式" class="headerlink" title="原生组件的样式"></a>原生组件的样式</h3><p>1、在React中仍然使用CSS为组件添加样式，并且采用内联的写法来定义和使用CSS。</p>
+<h3 id="宿主平台API"><a href="#宿主平台API" class="headerlink" title="宿主平台API"></a>宿主平台API</h3><p><u><em>pro.  暂时没搞懂如何在React Native中使用宿主平台API，需要阅读完chapter《模块与原生代码》之后回来进行总结</em></u></p>
+<h2 id="移动组件"><a href="#移动组件" class="headerlink" title="移动组件"></a>移动组件</h2><p>1、React Native提倡样式组件的复用，而非样式的复用（<u><em>pro. 这有什么区别？</em></u>）</p>
+<h3 id="类比HTML组件"><a href="#类比HTML组件" class="headerlink" title="类比HTML组件"></a>类比HTML组件</h3><table>
+<thead>
+<tr>
+<th>HTML</th>
+<th>React Native</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>div</td>
+<td>view</td>
+</tr>
+<tr>
+<td>img</td>
+<td>Image</td>
+</tr>
+<tr>
+<td>span、p</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>ul、ol、li</td>
+<td>FlatList</td>
+</tr>
+</tbody></table>
+<h3 id="Text组件"><a href="#Text组件" class="headerlink" title="Text组件"></a>Text组件</h3><p>1、仅有Text组件可以将纯文本作为子节点、</p>
+<p>2、不可以使用strong和em等子标签，替代的方式是使用fontWeight和fontStyle等内联样式属性</p>
+<h3 id="Image组件"><a href="#Image组件" class="headerlink" title="Image组件"></a>Image组件</h3><p>1、图片路径是以JS模块的方式被解析的，因此应该把图片和组件放在一个目录下。</p>
+<p>2、React Native打包器会根据图片后缀名进行对应的解析，如.ios.png表示在ios平台上渲染该图片，@2x、@3x等用以适配不同的设备屏幕密度。</p>
+<p>3、React Native支持从web导入图片，但需要手动指定图片尺寸，示例如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Image source&#x3D;&#123;&#123;uri: &quot;https:&#x2F;&#x2F;xxx.png&quot;&#125;&#125; style&#x3D;&#123;&#123;width:400,height:400&#125;&#125;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><h2 id="平台API"><a href="#平台API" class="headerlink" title="平台API"></a>平台API</h2><h2 id="模块和原生代码"><a href="#模块和原生代码" class="headerlink" title="模块和原生代码"></a>模块和原生代码</h2><h2 id="平台特定代码"><a href="#平台特定代码" class="headerlink" title="平台特定代码"></a>平台特定代码</h2><h2 id="调试与开发者工具"><a href="#调试与开发者工具" class="headerlink" title="调试与开发者工具"></a>调试与开发者工具</h2>
     
 
     
